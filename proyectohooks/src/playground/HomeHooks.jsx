@@ -67,7 +67,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useMemo</strong></td>
                         <td>
-                        <a href="/useImperativeHandle" className="btn btn-primary">Ir a ejemplo</a>
+                        <a href="/useMemo" className="btn btn-primary">Ir a ejemplo</a>
                         </td>
                         <td>Poner descripción</td>
                         <td>Performance</td>

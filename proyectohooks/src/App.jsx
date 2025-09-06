@@ -17,7 +17,8 @@ function App() {
         <Route path='/useNavigate' element={<HookUseNavigate/>}></Route>
         <Route path='/useReducer' element={<HookUseReducer/>}></Route>
         {/* <Route path='/useRef' element={<HookUseRef/>}></Route> */}
-        {/* <Route path='/useCallback' element={<HookUseCallback/>}></Route> */}
+        {/* <Route path='/useImperativeHandle' element={<HookUseCallback/>}></Route> */}
+        {/* <Route path='/useMemo' element={<HookUseCallback/>}></Route> */}
       </Routes>
     </BrowserRouter>
   )
