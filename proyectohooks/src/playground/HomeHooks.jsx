@@ -17,6 +17,14 @@ function HomeHooks(){
                     </thead>
                     <tbody>
                     <tr>
+                        <td><strong>useDebugValue</strong></td>
+                        <td>
+                        <a href="/useDebugValue" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Poner descripción</td>
+                        <td>Debug</td>
+                    </tr>
+                    <tr>
                         <td><strong>useState</strong></td>
                         <td>
                         <a href="/useState" className="btn btn-primary">Ir a ejemplo</a>
@@ -33,12 +41,36 @@ function HomeHooks(){
                         <td>Navegación</td>
                     </tr>
                     <tr>
-                        <td><strong>NuevoHook</strong></td>
+                        <td><strong>useReducer</strong></td>
                         <td>
-                        <a href="/" className="btn btn-primary">Ir a ejemplo</a>
+                        <a href="/useReducer" className="btn btn-primary">Ir a ejemplo</a>
                         </td>
-                        <td>Descripción breve del hook.</td>
-                        <td>Categoría</td>
+                        <td>Permite agregar un reductor al componente.</td>
+                        <td>Estado</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useRef</strong></td>
+                        <td>
+                        <a href="/useRef" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Poner descripción</td>
+                        <td>Referencias</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useImperativeHandle</strong></td>
+                        <td>
+                        <a href="/useImperativeHandle" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Poner descripción</td>
+                        <td>Referencias</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useMemo</strong></td>
+                        <td>
+                        <a href="/useImperativeHandle" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Poner descripción</td>
+                        <td>Performance</td>
                     </tr>
                     </tbody>
                 </table>
