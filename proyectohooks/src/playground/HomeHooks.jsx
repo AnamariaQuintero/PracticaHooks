@@ -53,7 +53,7 @@ function HomeHooks(){
                         <td>
                         <a href="/useRef" className="btn btn-primary">Ir a ejemplo</a>
                         </td>
-                        <td>Poner descripción</td>
+                        <td>Crea referencias mutables que no provocan re-render.</td>
                         <td>Referencias</td>
                     </tr>
                     <tr>
@@ -61,7 +61,7 @@ function HomeHooks(){
                         <td>
                         <a href="/useImperativeHandle" className="btn btn-primary">Ir a ejemplo</a>
                         </td>
-                        <td>Poner descripción</td>
+                        <td>Personaliza el valor expuesto con ref en componentes.</td>
                         <td>Referencias</td>
                     </tr>
                     <tr>
@@ -69,8 +69,104 @@ function HomeHooks(){
                         <td>
                         <a href="/useMemo" className="btn btn-primary">Ir a ejemplo</a>
                         </td>
-                        <td>Poner descripción</td>
+                        <td>Memoriza valores calculados para optimizar rendimiento.</td>
                         <td>Performance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useCallback</strong></td>
+                        <td>
+                        <a href="/useCallback" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Memoriza funciones para evitar recrearlas en cada render.</td>
+                        <td>Performance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useTransition</strong></td>
+                        <td>
+                        <a href="/useTransition" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Marca actualizaciones de estado como “transiciones” para mejorar la experiencia de usuario.</td>
+                        <td>Performance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useDebugValue</strong></td>
+                        <td>
+                        <a href="/useTransition" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Muestra información en React DevTools para hooks personalizados.</td>
+                        <td>Performance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useEffect</strong></td>
+                        <td>
+                        <a href="/useEffect" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Para librerías de estilos; inserta efectos justo antes de aplicar cambios al DOM.</td>
+                        <td>Efectos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useLayoutEffect</strong></td>
+                        <td>
+                        <a href="/useLayoutEffect" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Igual a useEffect, pero se ejecuta sincrónicamente después del renderizado.</td>
+                        <td>Efectos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useInsertionEffect</strong></td>
+                        <td>
+                        <a href="/useInsertionEffect" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Para librerías de estilos; inserta efectos justo antes de aplicar cambios al DOM.</td>
+                        <td>Efectos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useContext</strong></td>
+                        <td>
+                        <a href="/useContext" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Consume valores de un contexto sin necesidad de Context.Consumer.</td>
+                        <td>Contexto y uso externo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useSyncExternalStore</strong></td>
+                        <td>
+                        <a href="/useSyncExternalStore" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Se conecta de forma segura a stores externos con soporte para concurrencia.</td>
+                        <td>Contexto y uso externo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useId</strong></td>
+                        <td>
+                        <a href="/useId" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Genera identificadores únicos y estables (útil en accesibilidad y formularios).</td>
+                        <td>Contexto y uso externo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useOptimistic</strong></td>
+                        <td>
+                        <a href="/useOptimistic" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Permite manejar estados optimistas mientras se esperan respuestas del servidor.</td>
+                        <td>Nuevos en React</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useFormStatus</strong></td>
+                        <td>
+                        <a href="/useFormStatus" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Provee el estado de un formulario en server actions.</td>
+                        <td>Nuevos en React</td>
+                    </tr>
+                    <tr>
+                        <td><strong>useActionStatus</strong></td>
+                        <td>
+                        <a href="/useActionStatus" className="btn btn-primary">Ir a ejemplo</a>
+                        </td>
+                        <td>Maneja el estado y resultado de acciones enviadas al servidor.</td>
+                        <td>Nuevos en React</td>
                     </tr>
                     </tbody>
                 </table>
