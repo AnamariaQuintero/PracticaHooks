@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-function HookUseNavigate(){
+function HookUseMemo(){
 
     const [numero, setNumero] = useState(1);
 
@@ -23,10 +23,10 @@ function HookUseNavigate(){
                 
                 <button className="btn btn-success m-2"onClick={() => setNumero(numero + 1)}>Aumentar número</button>
 
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
             </div>
         </div>
     );
 }
 
-export default HookUseNavigate;
+export default HookUseMemo;

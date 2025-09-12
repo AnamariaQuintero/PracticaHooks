@@ -14,7 +14,7 @@ function HookUseNavigate(){
                 <div className="list-group">
                     <button onClick={GoRoute} className="btn btn-secondary">Ruta Navigate a UseState</button>
                     <Link to="/name-route">Ruta de ejemplo</Link>
-                    <a href="/" className="list-group-item">Ir al Home</a>
+                    <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function HookUseNavigate(){
+function HookUseEffect(){
 
     const [contador, setContador] = useState(1);
 
@@ -16,10 +16,10 @@ function HookUseNavigate(){
 
                 <p>Contador: {contador}</p>
                 <button onClick={() => setContador(contador + 1)} className="btn btn-success m-2">Aumentar</button>
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
             </div>
         </div>
     );
 }
 
-export default HookUseNavigate;
+export default HookUseEffect;

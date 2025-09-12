@@ -1,7 +1,7 @@
 import { useState, useDeferredValue } from "react";
 import { Link } from "react-router-dom";
 
-function HookUseNavigate(){
+function HookUseDeferredValue(){
 
     const [texto, setTexto] = useState("");
     const textoDiferido = useDeferredValue(texto);
@@ -17,10 +17,10 @@ function HookUseNavigate(){
         
                 <p className="text-info">Valor diferido: {textoDiferido}</p>
 
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
             </div>
         </div>
     );
 }
 
-export default HookUseNavigate;
+export default HookUseDeferredValue;

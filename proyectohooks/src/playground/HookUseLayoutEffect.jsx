@@ -1,22 +1,23 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
+import { Link } from "react-router-dom";
+import { useLayoutEffect, useState } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+function HookUseLayoutEffect() {
+  const [mensaje, setMensaje] = useState("Cargando...");
 
-function HookUseNavigate(){
-    const navigate = useNavigate(); 
+  useLayoutEffect(() => {
+    // Se ejecuta justo después de que el DOM esté actualizado
+    setMensaje("useLayoutEffect ya se ejecutó ✅");
+  }, []);
 
-    function GoRoute(){
-        navigate('/useState')
-    }
-
-    return(
-        <div className="container justify-content-center aling-center vh-100">
-            <div className="text-center">
-                <h2>Ejemplos de UseLayoutEffect</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
-            </div>
-        </div>
-    );
+  return (
+    <div className="container justify-content-center align-center vh-100">
+      <div className="text-center">
+        <h2>Ejemplos de UseLayoutEffect</h2>
+        <p>{mensaje}</p> {/* Mostramos el mensaje actualizado */}
+        <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
+      </div>
+    </div>
+  );
 }
 
-export default HookUseNavigate;
+export default HookUseLayoutEffect;
