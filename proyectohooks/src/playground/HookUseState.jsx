@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Contador(){
@@ -21,7 +22,7 @@ function Contador(){
                     <button onClick={disminuir} className="btn btn-warning">Disminuir</button> */}
                     <button onClick={() => setCount(count + 1)} className="btn btn-success">Aumentar</button>
                     <button onClick={() => setCount(count - 1)} className="btn btn-warning">Disminuir</button>
-                    <a href="/" className="list-group-item">Ir al Home</a>
+                    <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link> 
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@ function HookUseNavigate(){
 
                 {estado ? <p className="text-warning">Actualizando...</p>:<p>Has escrito: {texto}</p>}
 
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link> 
             </div>
         </div>
     );

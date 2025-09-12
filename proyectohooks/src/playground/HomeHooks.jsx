@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HomeHooks(){
     return(
-        <div className="container justify-content-center align-center vh-100">
+        <div className="container justify-content-center align-center vh-100%">
             <div className="text-center">
                 <h2>Ejemplos de Hooks</h2>
                 <div className="table-responsive">
@@ -19,7 +20,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useDebugValue</strong></td>
                         <td>
-                        <a href="/useDebugValue" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useDebugValue" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Poner descripción</td>
                         <td>Debug</td>
@@ -27,7 +28,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useState</strong></td>
                         <td>
-                        <a href="/useState" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useState" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Maneja el estado dentro de un componente funcional.</td>
                         <td>Estado</td>
@@ -35,7 +36,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useNavigate</strong></td>
                         <td>
-                        <a href="/useNavigate" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useNavigate" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Permite navegar entre rutas en React Router.</td>
                         <td>Navegación</td>
@@ -43,7 +44,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useReducer</strong></td>
                         <td>
-                        <a href="/useReducer" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useReducer" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Permite agregar un reductor al componente.</td>
                         <td>Estado</td>
@@ -51,7 +52,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useRef</strong></td>
                         <td>
-                        <a href="/useRef" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useRef" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Crea referencias mutables que no provocan re-render.</td>
                         <td>Referencias</td>
@@ -59,7 +60,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useImperativeHandle</strong></td>
                         <td>
-                        <a href="/useImperativeHandle" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useImperativeHandle" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Personaliza el valor expuesto con ref en componentes.</td>
                         <td>Referencias</td>
@@ -67,7 +68,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useMemo</strong></td>
                         <td>
-                        <a href="/useMemo" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useMemo" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Memoriza valores calculados para optimizar rendimiento.</td>
                         <td>Performance</td>
@@ -75,7 +76,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useCallback</strong></td>
                         <td>
-                        <a href="/useCallback" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useCallback" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Memoriza funciones para evitar recrearlas en cada render.</td>
                         <td>Performance</td>
@@ -83,7 +84,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useTransition</strong></td>
                         <td>
-                        <a href="/useTransition" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useTransition" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Marca actualizaciones de estado como “transiciones” para mejorar la experiencia de usuario.</td>
                         <td>Performance</td>
@@ -91,7 +92,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useDeferredValue</strong></td>
                         <td>
-                        <a href="/useDeferredValue" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useDeferredValue" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Muestra información en React DevTools para hooks personalizados.</td>
                         <td>Performance</td>
@@ -99,7 +100,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useEffect</strong></td>
                         <td>
-                        <a href="/useEffect" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useEffect" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Para librerías de estilos; inserta efectos justo antes de aplicar cambios al DOM.</td>
                         <td>Efectos</td>
@@ -107,7 +108,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useLayoutEffect</strong></td>
                         <td>
-                        <a href="/useLayoutEffect" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useLayoutEffect" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Igual a useEffect, pero se ejecuta sincrónicamente después del renderizado.</td>
                         <td>Efectos</td>
@@ -115,7 +116,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useInsertionEffect</strong></td>
                         <td>
-                        <a href="/useInsertionEffect" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useInsertionEffect" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Para librerías de estilos; inserta efectos justo antes de aplicar cambios al DOM.</td>
                         <td>Efectos</td>
@@ -123,7 +124,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useContext</strong></td>
                         <td>
-                        <a href="/useContext" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useContext" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Consume valores de un contexto sin necesidad de Context.Consumer.</td>
                         <td>Contexto y uso externo</td>
@@ -131,7 +132,7 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useSyncExternalStore</strong></td>
                         <td>
-                        <a href="/useSyncExternalStore" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useSyncExternalStore" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Se conecta de forma segura a stores externos con soporte para concurrencia.</td>
                         <td>Contexto y uso externo</td>
@@ -139,15 +140,23 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useId</strong></td>
                         <td>
-                        <a href="/useId" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useId" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Genera identificadores únicos y estables (útil en accesibilidad y formularios).</td>
                         <td>Contexto y uso externo</td>
                     </tr>
                     <tr>
+                        <td><strong>use</strong></td>
+                        <td>
+                        <Link to="/use" className="btn btn-primary">Ir a ejemplo</Link>
+                        </td>
+                        <td>Es una API que permite leer el valor de un recurso como una promesa o contexto.</td>
+                        <td>Nuevos en React</td>
+                    </tr>
+                    <tr>
                         <td><strong>useOptimistic</strong></td>
                         <td>
-                        <a href="/useOptimistic" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useOptimistic" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Permite manejar estados optimistas mientras se esperan respuestas del servidor.</td>
                         <td>Nuevos en React</td>
@@ -155,15 +164,15 @@ function HomeHooks(){
                     <tr>
                         <td><strong>useFormStatus</strong></td>
                         <td>
-                        <a href="/useFormStatus" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useFormStatus" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Provee el estado de un formulario en server actions.</td>
                         <td>Nuevos en React</td>
                     </tr>
                     <tr>
-                        <td><strong>useActionStatus</strong></td>
+                        <td><strong>useActionState</strong></td>
                         <td>
-                        <a href="/useActionStatus" className="btn btn-primary">Ir a ejemplo</a>
+                        <Link to="/useActionState" className="btn btn-primary">Ir a ejemplo</Link>
                         </td>
                         <td>Maneja el estado y resultado de acciones enviadas al servidor.</td>
                         <td>Nuevos en React</td>

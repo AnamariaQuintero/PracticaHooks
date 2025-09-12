@@ -1,23 +1,24 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
+import { Link } from "react-router-dom";
+import { createContext, useContext } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+// 1. Crear un contexto
+const ColorContext = createContext("blue");
 
-function HookUseNavigate(){
-    
-    const navigate = useNavigate(); 
+function HookUseContext() {
+  // 2. Consumir el contexto
+  const color = useContext(ColorContext);
 
-    function GoRoute(){
-        navigate('/useState')
-    }
-
-    return(
-        <div className="container justify-content-center aling-center vh-100">
-            <div className="text-center">
-                <h2>Ejemplos de UseContext</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
-            </div>
+  return (
+    // 3. Proveer el contexto
+    <ColorContext.Provider value="green">
+      <div className="container justify-content-center align-center vh-100">
+        <div className="text-center">
+          <h2 style={{ color }}>Ejemplos de UseContext</h2>
+          <Link to="/" className="list-group-item rounded bg-primary m-3 text-center text-white"> Ir al Home</Link>
         </div>
-    );
+      </div>
+    </ColorContext.Provider>
+  );
 }
 
-export default HookUseNavigate;
+export default HookUseContext;

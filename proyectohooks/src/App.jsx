@@ -19,7 +19,8 @@ import HookUseSyncExternalStore from './playground/HookUseSyncExternalStore'
 import HookUseId from './playground/HookUseId'
 import HookUse from './playground/HookUse'
 import HookUseOptimistic from './playground/HookUseOptimistic'
-import HoohUseFormStatus from './playground/HookUseFormStatus'
+import HookUseFormStatus from './playground/HookUseFormStatus'
+import HookUseActionState from './playground/HookUseActionState'
 
 function App() {
   return (
@@ -46,8 +47,8 @@ function App() {
         <Route path='/useId' element={<HookUseId/>}></Route>
         <Route path='/use' element={<HookUse/>}></Route>
         <Route path='/useOptimistic' element={<HookUseOptimistic/>}></Route>
-        <Route path='/useFormStatus' element={<HoohUseFormStatus/>}></Route>
-        <Route path='/useActionStatus' element={<HoohUseFormStatus/>}></Route>
+        <Route path='/useFormStatus' element={<HookUseFormStatus/>}></Route>
+        <Route path='/useActionState' element={<HookUseActionState/>}></Route>
       </Routes>
     </BrowserRouter>
   )

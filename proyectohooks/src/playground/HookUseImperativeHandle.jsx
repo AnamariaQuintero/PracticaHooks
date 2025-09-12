@@ -13,7 +13,7 @@ const Child = forwardRef((props, ref) => {
 
 });
 
-function HookUseNavigate(){
+function HookUseImperativeHandle(){
 
     const childRef = useRef();
 
@@ -25,12 +25,12 @@ function HookUseNavigate(){
 
                 <Child ref={childRef} />
 
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
             </div>
         </div>
     );
 }
 
-export default HookUseNavigate;
+export default HookUseImperativeHandle;
 
 

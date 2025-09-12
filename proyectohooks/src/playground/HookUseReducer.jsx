@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useReducer } from "react";
 
 function reducer(state, action) {
@@ -24,7 +25,7 @@ export default function SimpleCounter() {
       <button onClick={() => dispatch({ type: "increment" })}>➕ Sumar</button>
       <button onClick={() => dispatch({ type: "decrement" })}>➖ Restar</button>
       <button onClick={() => dispatch({ type: "reset" })}>🔄 Reiniciar</button>
-      <a href="/" className="list-group-item">Ir al Home</a>  
+      <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link> 
     </div>
   );
 }

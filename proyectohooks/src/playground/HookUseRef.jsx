@@ -10,7 +10,7 @@ function HookUseNavigate(){
             <div className="text-center">
                 <h2>Ejemplos de UseRef</h2>
                 <p>Aqui motramos el valor de cont: {cont.current}</p>
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center"> ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link> 
             </div>
         </div>
     );

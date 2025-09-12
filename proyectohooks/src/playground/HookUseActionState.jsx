@@ -1,22 +1,33 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
+import { Link } from "react-router-dom";
+import { useActionState } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+function HookUseActionState() {
+  // Acción muy simple
+  async function accion(prevState) {
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // simular espera
+    return prevState + 1; // cada vez suma 1
+  }
 
-function HookUseNavigate(){
-    const navigate = useNavigate(); 
+  // useActionState recibe la acción y un estado inicial (0)
+  const [count, formAction, isPending] = useActionState(accion, 0);
 
-    function GoRoute(){
-        navigate('/useState')
-    }
+  return (
+    <div className="container justify-content-center align-center vh-100">
+      <div className="text-center">
+        <h2>Ejemplos de UseActionState</h2>
 
-    return(
-        <div className="container justify-content-center aling-center vh-100">
-            <div className="text-center">
-                <h2>Ejemplos de UseActionState</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
-            </div>
-        </div>
-    );
+        <form action={formAction}>
+          <button type="submit" className="btn btn-primary" disabled={isPending}>
+            {isPending ? "Cargando..." : "Sumar 1"}
+          </button>
+        </form>
+
+        <p className="mt-3">Contador: {count}</p>
+
+        <Link to="/" className="list-group-item rounded bg-primary m-3 text-center text-white"> Ir al Home</Link>
+      </div>
+    </div>
+  );
 }
 
-export default HookUseNavigate;
+export default HookUseActionState;

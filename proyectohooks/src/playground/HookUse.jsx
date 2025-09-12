@@ -1,22 +1,32 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
+import { Link } from "react-router-dom";
+import { use } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+// Simulamos una promesa (como si fuera una API)
+const traerMensaje = new Promise((resolve) =>
+  setTimeout(() => resolve("Hola desde el hook use"), 1000)
+);
 
-function HookUseNavigate(){
-    const navigate = useNavigate(); 
+function HookUse() {
+  // Usamos el hook use para "esperar" la promesa
+  const mensaje = use(traerMensaje);
 
-    function GoRoute(){
-        navigate('/useState')
-    }
+  return (
+    <div className="container justify-content-center align-center vh-100">
+      <div className="text-center">
+        <h2>Ejemplo de use</h2>
 
-    return(
-        <div className="container justify-content-center aling-center vh-100">
-            <div className="text-center">
-                <h2>Ejemplos de Use</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
-            </div>
-        </div>
-    );
+        {/* Mostramos el mensaje de la promesa */}
+        <p>{mensaje}</p>
+
+        <Link
+          to="/"
+          className="list-group-item rounded bg-primary m-3 text-center text-white"
+        >
+          Ir al Home
+        </Link>
+      </div>
+    </div>
+  );
 }
 
-export default HookUseNavigate;
+export default HookUse;

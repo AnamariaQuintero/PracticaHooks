@@ -1,22 +1,23 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
+import { Link } from "react-router-dom";
+import { useId } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+function HookUseId() {
+  // Genera un ID único
+  const inputId = useId();
 
-function HookUseNavigate(){
-    const navigate = useNavigate(); 
+  return (
+    <div className="container justify-content-center align-center vh-100">
+      <div className="text-center">
+        <h2>Ejemplos de UseId</h2>
 
-    function GoRoute(){
-        navigate('/useState')
-    }
+        {/* Input asociado a su label usando useId */}
+        <label htmlFor={inputId}>Escribe tu nombre:</label>
+        <input id={inputId} type="text" className="form-control m-2" />
 
-    return(
-        <div className="container justify-content-center aling-center vh-100">
-            <div className="text-center">
-                <h2>Ejemplos de Useld</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
-            </div>
-        </div>
-    );
+        <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
+      </div>
+    </div>
+  );
 }
 
-export default HookUseNavigate;
+export default HookUseId;

@@ -8,7 +8,7 @@ function estado (value){
 
 }
 
-function HookUseNavigate(){
+function HookUseDebugValue(){
 
     const estad = estado(true);
 
@@ -17,10 +17,10 @@ function HookUseNavigate(){
             <div className="text-center">
                 <h2>Ejemplos de UseDebugValue</h2>
                 <p>estado: {estad? "activo" : "inactivo"} </p>
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al home</Link>
             </div>
         </div>
     );
 }
 
-export default HookUseNavigate;
+export default HookUseDebugValue;

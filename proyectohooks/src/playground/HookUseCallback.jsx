@@ -2,7 +2,7 @@
 import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 
-function HookUseNavigate(){
+function HookUseCallback(){
 
     const [contador, setContador] = useState(0);
 
@@ -19,10 +19,10 @@ function HookUseNavigate(){
                 
                 <button onClick={incrementar} className="btn btn-success m-2">Aumentar</button>
 
-                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al Home</Link>
             </div>
         </div>
     );
 }
 
-export default HookUseNavigate;
+export default HookUseCallback;
