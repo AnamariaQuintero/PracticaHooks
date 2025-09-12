@@ -1,19 +1,23 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
-
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useDeferredValue } from "react";
+import { Link } from "react-router-dom";
 
 function HookUseNavigate(){
-    const navigate = useNavigate(); 
 
-    function GoRoute(){
-        navigate('/useState')
-    }
+    const [texto, setTexto] = useState("");
+    const textoDiferido = useDeferredValue(texto);
 
     return(
-        <div className="container justify-content-center aling-center vh-100">
+        <div className="container justify-content-center align-center vh-100">
             <div className="text-center">
-                <h2>Ejemplos de Hook</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
+                <h2>Ejemplos de UseDeferredValue</h2>
+
+                <input type="text" value={texto} onChange={(e) => setTexto(e.target.value)} className="form-control m-2"placeholder="Escribe algo..."/>
+
+                <p>Valor inmediato: {texto}</p>
+        
+                <p className="text-info">Valor diferido: {textoDiferido}</p>
+
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
             </div>
         </div>
     );

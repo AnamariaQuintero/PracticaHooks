@@ -1,6 +1,5 @@
 import { useReducer } from "react";
 
-// Reducer: define cómo cambia el estado
 function reducer(state, action) {
   switch (action.type) {
     case "increment":
@@ -16,7 +15,6 @@ function reducer(state, action) {
 }
 
 export default function SimpleCounter() {
-  // Estado inicial: { count: 0 }
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (

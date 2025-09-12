@@ -1,19 +1,29 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
-
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useTransition } from "react";
+import { Link } from "react-router-dom";
 
 function HookUseNavigate(){
-    const navigate = useNavigate(); 
 
-    function GoRoute(){
-        navigate('/useState')
-    }
+    const [texto, setTexto] = useState("");
+    const [estado, startTransition] = useTransition();
+
+    const handleChange = (e) => {
+        const value = e.target.value;
+        
+        startTransition(() => {
+            setTexto(value);
+        });
+    };
 
     return(
-        <div className="container justify-content-center aling-center vh-100">
+        <div className="container justify-content-center align-center vh-100">
             <div className="text-center">
-                <h2>Ejemplos de Hook</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
+                <h2>Ejemplo de UseTransition</h2>
+
+                <input type="text" onChange={handleChange} className="form-control m-2"placeholder="Escribe algo"/>
+
+                {estado ? <p className="text-warning">Actualizando...</p>:<p>Has escrito: {texto}</p>}
+
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir a casa</Link>
             </div>
         </div>
     );

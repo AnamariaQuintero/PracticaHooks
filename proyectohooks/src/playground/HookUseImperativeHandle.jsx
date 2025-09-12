@@ -1,23 +1,36 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
+//useImperativeHandle se usa junto con forwardRef para exponer funciones desde un componente hijo al padre
+import { useImperativeHandle, useRef, forwardRef } from 'react';
+import { Link } from "react-router-dom";
 
-import { Link, useNavigate } from "react-router-dom";
+const Child = forwardRef((props, ref) => {
+    const mensaje = () => {
+        alert("Soy una función expuesta con useImperativeHandle");
+    };
+
+    useImperativeHandle(ref, () => ({
+        mostrarMensaje: mensaje
+    }));
+
+});
 
 function HookUseNavigate(){
-    const navigate = useNavigate(); 
 
-    function GoRoute(){
-        navigate('/useState')
-    }
+    const childRef = useRef();
 
     return(
-        <div className="container justify-content-center aling-center vh-100">
+        <div className="container justify-content-center align-center vh-100">
             <div className="text-center">
-                <h2>Ejemplos de Hook</h2>
-                <a href="/" className="list-group-item">Ir al Home</a>
+                <h2>Ejemplos de UseImperative</h2>
+                <button onClick={() => childRef.current.mostrarMensaje()} className="btn btn-success m-2">Presiona aquí </button>
+
+                <Child ref={childRef} />
+
+                <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">ir a casa</Link>
             </div>
         </div>
     );
 }
 
 export default HookUseNavigate;
+
 

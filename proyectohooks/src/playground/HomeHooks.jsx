@@ -89,9 +89,9 @@ function HomeHooks(){
                         <td>Performance</td>
                     </tr>
                     <tr>
-                        <td><strong>useDebugValue</strong></td>
+                        <td><strong>useDeferredValue</strong></td>
                         <td>
-                        <a href="/useTransition" className="btn btn-primary">Ir a ejemplo</a>
+                        <a href="/useDeferredValue" className="btn btn-primary">Ir a ejemplo</a>
                         </td>
                         <td>Muestra información en React DevTools para hooks personalizados.</td>
                         <td>Performance</td>

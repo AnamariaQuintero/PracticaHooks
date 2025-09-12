@@ -12,7 +12,7 @@ function HookUseNavigate(){
     return(
         <div className="container justify-content-center aling-center vh-100">
             <div className="text-center">
-                <h2>Ejemplos de Hook</h2>
+                <h2>Ejemplos de UseLayoutEffect</h2>
                 <a href="/" className="list-group-item">Ir al Home</a>
             </div>
         </div>

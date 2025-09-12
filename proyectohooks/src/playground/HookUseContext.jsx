@@ -3,6 +3,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 function HookUseNavigate(){
+    
     const navigate = useNavigate(); 
 
     function GoRoute(){
@@ -12,7 +13,7 @@ function HookUseNavigate(){
     return(
         <div className="container justify-content-center aling-center vh-100">
             <div className="text-center">
-                <h2>Ejemplos de Hook</h2>
+                <h2>Ejemplos de UseContext</h2>
                 <a href="/" className="list-group-item">Ir al Home</a>
             </div>
         </div>
