@@ -6,7 +6,7 @@ function HookUseLayoutEffect() {
 
   useLayoutEffect(() => {
     // Se ejecuta justo después de que el DOM esté actualizado
-    setMensaje("useLayoutEffect ya se ejecutó ✅");
+    setMensaje("useLayoutEffect ya se ejecutó");
   }, []);
 
   return (
