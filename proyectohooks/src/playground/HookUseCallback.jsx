@@ -1,4 +1,3 @@
-// Aca esta un ejemplo es para probar que la ruta si funcione 
 import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 

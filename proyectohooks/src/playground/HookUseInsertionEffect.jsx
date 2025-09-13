@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useInsertionEffect } from "react";
 
 function HookUseInsertionEffect() {
-  // Inyectamos un estilo con useInsertionEffect
+  // Insertamos un estilo con useInsertionEffect
   useInsertionEffect(() => {
     const styleTag = document.createElement("style");
     styleTag.innerHTML = `

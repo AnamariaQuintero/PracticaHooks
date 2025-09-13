@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { createContext, useContext } from "react";
 
-// 1. Crear un contexto
+//Crear un contexto
 const ColorContext = createContext("blue");
 
 function HookUseContext() {
-  // 2. Consumir el contexto
+  // Consumir el contexto
   const color = useContext(ColorContext);
 
   return (
-    // 3. Proveer el contexto
+    //Proveer el contexto
     <ColorContext.Provider value="green">
       <div className="container justify-content-center align-center vh-100">
         <div className="text-center">

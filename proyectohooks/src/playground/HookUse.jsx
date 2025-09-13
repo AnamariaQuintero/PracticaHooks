@@ -18,12 +18,7 @@ function HookUse() {
         {/* Mostramos el mensaje de la promesa */}
         <p>{mensaje}</p>
 
-        <Link
-          to="/"
-          className="list-group-item rounded bg-primary m-3 text-center text-white"
-        >
-          Ir al Home
-        </Link>
+        <Link to="/" className="list-group-item rounded bg-primary m-3 text-center">Ir al Home</Link>
       </div>
     </div>
   );
